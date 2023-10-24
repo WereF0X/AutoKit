@@ -49,12 +49,46 @@
           }
         ]
       }
+    },
+    {
+      "name": "Welcome",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "welcome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/autokit/advancements/welcome.json"
+        ]
+      }
+    },
+    {
+      "name": "Giveadv",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "giveadv",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/autokit/procedures/GiveadvProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "advancements.welcome.title": "Welcome!",
+      "advancements.welcome.descr": "Welcome to the server!"
+    }
   },
   "foldersRoot": {
     "name": "~",

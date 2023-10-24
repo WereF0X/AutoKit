@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "autokit",
+  "version": "1.0.0",
+  "name": "AutoKit",
+  "description": "Autokits a player when they join the server.",
+  "authors": [
+    "The_WereF0X"
+  ],
+  "contact": {
+    "homepage": "https://discord.gg/VmvQjHkyVZ",
+    "sources": ""
+  },
+  "license": "All Rights Reserved",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.mcreator.autokit.AutokitMod"
+    ],
+    "client": [
+      "net.mcreator.autokit.ClientInit"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "fabric": "*",
+    "minecraft": "~1.20",
+    "java": ">=17"
+  }
+}

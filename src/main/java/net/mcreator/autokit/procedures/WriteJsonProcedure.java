@@ -33,6 +33,7 @@ public class WriteJsonProcedure {
 		File file = new File("");
 		com.google.gson.JsonObject mainObj = new com.google.gson.JsonObject();
 		com.google.gson.JsonObject subObj = new com.google.gson.JsonObject();
+		com.google.gson.JsonObject location = new com.google.gson.JsonObject();
 		file = new File((FMLPaths.GAMEDIR.get().toString() + "/config"), File.separator + "test.json");
 		if (!file.exists()) {
 			try {
@@ -43,9 +44,10 @@ public class WriteJsonProcedure {
 			}
 		}
 		mainObj.addProperty("booleanValue", (world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z))));
-		mainObj.addProperty("stringValue", ("Selected kit: " + "starter"));
+		mainObj.addProperty("stringValue", ("Selected kit: " + mainObj.get("stringValue").getAsString()));
 		subObj.addProperty("numberValue", (world.getMaxLocalRawBrightness(BlockPos.containing(x, y, z))));
 		mainObj.add("subObj", subObj);
+		mainObj.addProperty("location", (world.getMaxLocalRawBrightness(BlockPos.containing(x, y, z))));
 		{
 			Gson mainGSONBuilderVariable = new GsonBuilder().setPrettyPrinting().create();
 			try {
