@@ -1,0 +1,84 @@
+{
+  "mod_elements": [
+    {
+      "name": "WriteJson",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "write_json",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/autokit/procedures/WriteJsonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ReadJson",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "read_json",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/autokit/procedures/ReadJsonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {}
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "autokit",
+    "modName": "AutoKit",
+    "version": "1.0.0",
+    "description": "Autokits a player when they join the server.",
+    "author": "The_WereF0X",
+    "websiteURL": "https://discord.gg/VmvQjHkyVZ",
+    "license": "All Rights Reserved",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": true,
+    "updateURL": "https://discord.gg/VmvQjHkyVZ",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "The_WereF0X",
+    "modElementsPackage": "net.mcreator.autokit",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300336712
+}
